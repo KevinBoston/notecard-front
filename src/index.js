@@ -6,11 +6,11 @@ import {createStore, applyMiddleware, compose} from 'redux'
 import thunk from 'redux-thunk'
 import './index.css';
 import App from './App';
-//import NotecardReducer from ./reducers/NotecardReducer;
+import NotecardReducer from './reducers/NotecardReducer';
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
-let store = createStore(reducer, {}, composeEnhancers(applyMiddleware(thunk)))
+let store = createStore(NotecardReducer, {}, composeEnhancers(applyMiddleware(thunk)))
 
 ReactDOM.render(
   <Provider store={store} >
