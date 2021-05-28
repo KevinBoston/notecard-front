@@ -1,4 +1,4 @@
-function NotecardReducer(state = { items: [], user: {username: undefined}}){
+function NotecardReducer(state = { stacks: [], user: {username: undefined}}){
     console.log(action)
     switch (action.type) {
 
