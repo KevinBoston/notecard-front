@@ -23,7 +23,7 @@ class AddCardForm extends React.component {
         })
     }
     determineDisabled() {
-        this.state.front === "" || this.state.back === ""
+        this.state.front === "" || this.state.back === "" || this.state.front === this.state.back
     }
 
     render() {
