@@ -1,8 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
 import React from 'react';
+import {getDecks} from './actions/DeckActions'
 
 class App extends React.Component {
+  componentDidMount() {
+      
+    this.props.getDecks()
+ }
   render() {
     return(
       <div className="App">
@@ -15,4 +20,4 @@ class App extends React.Component {
   };
 }
 
-export default App;
+export default connect(mapStateToProps, {getDecks})(App);
