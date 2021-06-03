@@ -15,9 +15,14 @@ class App extends React.Component {
           <img src={logo} className="App-logo" alt="logo" /> 
         </header> 
         <p>Welcome to Notecard!</p>
+        {/* Pass this.state.decks to DeckContainer */}
       </div>
     ) 
   };
+}
+
+const mapStateToProps = state => {
+  return {decks: state.decks}
 }
 
 export default connect(mapStateToProps, {getDecks})(App);
