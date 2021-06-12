@@ -1,4 +1,7 @@
+import { react } from "react-dom"
+
 export const getDecks = () => {
+    const deck_url = "http://localhost:3000/decks"
     const decks = [
             {
              name: "Math",

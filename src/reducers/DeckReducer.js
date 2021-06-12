@@ -3,7 +3,8 @@ function DeckReducer(state = {decks: []}, action) {
     switch (action.type) {
 
         case 'GET_DECKS':
-            return {...state, decks: action.payload.decks} 
+            //console.log(action.payload, state)
+            return {...state, decks: action.payload} 
 
 
         default:
