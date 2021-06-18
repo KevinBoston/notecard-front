@@ -43,3 +43,5 @@ class AddDeckForm extends React.component {
     }
 
 }
+
+export default AddDeckForm;
