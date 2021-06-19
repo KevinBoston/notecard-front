@@ -25,3 +25,13 @@ export const getDecks = () => {
     }
 }
 
+export const addDeck = (newDeck) => {
+    console.log(newDeck);
+    return (dispatch) => {
+        dispatch({
+            type: 'ADD_DECK',
+            payload: newDeck
+        })
+    }
+
+}
