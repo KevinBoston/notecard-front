@@ -1,4 +1,8 @@
 import React from 'react-dom'
+import {withRouter} from 'react-router-dom'
+import {connect} from 'react-redux'
+import {addDeck} from '../actions/DeckActions'
+
 class AddDeckForm extends React.component {
     state = {
         name: "",
@@ -13,7 +17,8 @@ class AddDeckForm extends React.component {
     }
     handleSubmit = e => {
         e.preventDefault()
-
+        this.props.addDeck(this.state)
+        this.props.history.push('/decks');
         this.setState({
             name: "",
             public: true,
