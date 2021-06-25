@@ -13,6 +13,9 @@ class NavBar extends React.Component {
                 <NavLink to='/decks' className="NavBarLink-decks">
                     View all Decks
                 </NavLink>
+                <NavLink to='/decks/new' className="NavBarLink-decks-new">
+                    Add a Deck
+                </NavLink>
             </div>
         )
     }
