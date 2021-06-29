@@ -6,9 +6,9 @@ const DeckDisplay = (props) => {
    
         return(
             <div> 
-                {props.deck.name}
-                {this.props.deck.description}
-                Public: {this.props.deck.public}
+                {props.deck.name} <br />
+                {props.deck.description} <br />
+                Public: {props.deck.public} <br />
             </div>
         )
 

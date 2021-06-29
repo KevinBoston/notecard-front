@@ -22,7 +22,7 @@ class App extends React.Component {
       console.log("loading decks")
       let decks = this.props.decks;
       console.log(decks)
-      decks.forEach(deck => {
+      return decks.map(deck => {
         console.log(deck)
         return <DeckDisplay deck={deck} />
       })
