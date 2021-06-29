@@ -3,6 +3,7 @@ import './App.css';
 import React from 'react';
 import {getDecks} from './actions/DeckActions'
 import {connect} from 'react-redux';
+import DeckDisplay from './components/DeckDisplay';
 
 class App extends React.Component {
   // componentWillMount() {
@@ -18,14 +19,14 @@ class App extends React.Component {
   }
   showDecks() {
     if (this.props.decks) {
+      console.log("loading decks")
       let decks = this.props.decks;
       console.log(decks)
-      let content = decks.forEach(deck => {
+      decks.forEach(deck => {
         console.log(deck)
-        debugger
-        return <>{deck.name}</>
+        return <DeckDisplay deck={deck} />
       })
-      return content;
+      
     } else {
       return <>Loading decks...</>
     }
