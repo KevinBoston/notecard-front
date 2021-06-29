@@ -16,6 +16,20 @@ class App extends React.Component {
     super(props)
     this.props.getDecks();
   }
+  showDecks() {
+    if (this.props.decks) {
+      let decks = this.props.decks;
+      console.log(decks)
+      debugger
+      let content = decks.forEach(deck => {
+        return <>{deck.name}, {deck.description}</>
+      })
+      return content;
+    } else {
+      return <>Loading decks...</>
+    }
+    
+  }
 
   render() {
     return(
@@ -24,7 +38,7 @@ class App extends React.Component {
           <img src={logo} className="App-logo" alt="logo" /> 
         </header> 
         <p>Welcome to Notecard!</p>
-        <>{this.state.decks}</>
+        <>{this.showDecks()}</>
         {/* Pass this.state.decks to DeckContainer */}
       </div>
     ) 
@@ -32,8 +46,8 @@ class App extends React.Component {
 }
 
 const mapStateToProps = state => {
-  
   console.log(state)
+  
   return {decks: state.decks}
 }
 
