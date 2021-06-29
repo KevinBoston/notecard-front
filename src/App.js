@@ -20,9 +20,10 @@ class App extends React.Component {
     if (this.props.decks) {
       let decks = this.props.decks;
       console.log(decks)
-      debugger
       let content = decks.forEach(deck => {
-        return <>{deck.name}, {deck.description}</>
+        console.log(deck)
+        debugger
+        return <>{deck.name}</>
       })
       return content;
     } else {
