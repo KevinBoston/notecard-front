@@ -1,9 +1,8 @@
 import React from 'react';
-import {connect} from 'react-redux'
-import {withRouter} from 'react-router-dom'
 
 
-class AddCardForm extends React.component {
+
+class AddCardForm extends React.Component {
 
     state = {
         front: "",
@@ -21,9 +20,11 @@ class AddCardForm extends React.component {
             front: "",
             back: ""
         })
+        console.log("Submitted")
     }
-    determineDisabled() {
-        this.state.front === "" || this.state.back === "" || this.state.front === this.state.back
+    determineDisabled = () => {
+        let disabled =  (this.state.front === "" || this.state.back === "" || this.state.front === this.state.back)
+        return disabled
     }
 
     render() {
@@ -35,7 +36,7 @@ class AddCardForm extends React.component {
                     <input type="text" name="front" onChange={this.handleChange} placeholder="Front of the card" value={this.state.front} /><br />
                     <label>Back: </label>
                     <input type="text" name="back" onChange={this.handleChange} placeholder="Back of the card" value={this.state.back} /><br />
-                    <input type="submit" disabled={this.determineDisabled}/>
+                    <input type="submit" disabled={this.determineDisabled()}/>
                 </form>
             </div>
         )
