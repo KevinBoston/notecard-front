@@ -4,6 +4,7 @@ import React from 'react';
 import {getDecks} from './actions/DeckActions'
 import {connect} from 'react-redux';
 import DeckDisplay from './components/DeckDisplay';
+import TestDisplay from './containers/TestDisplay';
 
 class App extends React.Component {
   // componentWillMount() {
@@ -41,7 +42,7 @@ class App extends React.Component {
         </header> 
         <p>Welcome to Notecard!</p>
         <>{this.showDecks()}</>
-        {/* Pass this.state.decks to DeckContainer */}
+        <TestDisplay />
       </div>
     ) 
   };
