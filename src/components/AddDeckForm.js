@@ -1,9 +1,9 @@
-import React from 'react-dom'
+import React from 'react'
 import {withRouter} from 'react-router-dom'
 import {connect} from 'react-redux'
 import {addDeck} from '../actions/DeckActions'
 
-class AddDeckForm extends React.component {
+class AddDeckForm extends React.Component {
     state = {
         name: "",
         public: false,
