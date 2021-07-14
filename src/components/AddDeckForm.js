@@ -26,7 +26,7 @@ class AddDeckForm extends React.component {
         })
     }
     determineDisabled() {
-        this.state.name === "" || this.state.description === ""
+        return (this.state.name === "" || this.state.description === "")
     }
 
     render() {
