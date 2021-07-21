@@ -6,8 +6,8 @@ class Card extends React.Component {
     render() {
         return(
             <>
-                <p>Front: {this.props.front}</p>
-                <p>Back: {this.props.back}</p>
+                <p>Front: {this.props.front}</p><br />
+                <p>Back: {this.props.back}</p><br />
             </>
         )
     }
