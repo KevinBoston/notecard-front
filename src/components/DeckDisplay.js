@@ -9,7 +9,8 @@ const DeckDisplay = (props) => {
                 {props.deck.name} <br />
                 {props.deck.description} <br />
                 Public: { props.deck.public ? "True" : "False"} <br />
-                {props.deck.cards[0].front}<br />
+                Front: {props.deck.cards[0].front}<br />
+                Back: {props.deck.cards[0].back}<br />
             </div>
         )
 
