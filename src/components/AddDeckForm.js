@@ -18,7 +18,7 @@ class AddDeckForm extends React.Component {
     handleSubmit = e => {
         e.preventDefault()
         this.props.addDeck(this.state)
-        this.props.history.push('/decks');
+        //this.props.history.push('/decks');
         this.setState({
             name: "",
             public: false,
