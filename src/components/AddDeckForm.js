@@ -49,5 +49,7 @@ class AddDeckForm extends React.Component {
     }
 
 }
-
-export default AddDeckForm;
+const mapStateToProps = state => {
+    return {decks: state.decks}
+}
+export default withRouter(connect(mapStateToProps, {addDeck})(AddDeckForm));
