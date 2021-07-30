@@ -21,7 +21,7 @@ class AddDeckForm extends React.Component {
         this.props.history.push('/decks');
         this.setState({
             name: "",
-            public: true,
+            public: false,
             description: ""
         })
     }
