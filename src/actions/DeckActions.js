@@ -6,13 +6,13 @@ export const getDecks = () => {
             {
              name: "Math",
              description: "Learn basic math!",
-             cards: [{front: "1 + 1", back: "2"}, {front: "11-2", back: "9"}],
+             cards: [{front: "1 + 1", back: "2", deck_id: 0}, {front: "11-2", back: "9", deck_id: 0}],
              public: true
             },
             {
              name: "Game of Thrones",
              description: "Learn basics about Game of Thrones characters (SPOILERS)",
-             cards: [{front: "Knows nothing", back: "Jon Snow"}, {front:"Known as 'The Conciliator'", back: "Jaehareys I"}],
+             cards: [{front: "Knows nothing", back: "Jon Snow", deck_id: 1}, {front:"Known as 'The Conciliator'", back: "Jaehareys I", deck_id: 1}],
              public: true
             }
         ]
