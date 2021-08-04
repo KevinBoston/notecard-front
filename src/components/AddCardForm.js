@@ -1,4 +1,5 @@
 import React from 'react';
+import addCard from '../actions/CardActions'
 
 
 
@@ -6,7 +7,8 @@ class AddCardForm extends React.Component {
 
     state = {
         front: "",
-        back: ""
+        back: "",
+        deck_id
     }
     handleChange = e => {
         this.setState({
@@ -43,5 +45,7 @@ class AddCardForm extends React.Component {
     }
 
 }
-
-export default AddCardForm
+const mapStateToProps = state => {
+    return {decks: state.decks}
+}
+export default withRouter(connect(mapStateToProps, {addCard})(AddCardForm));
