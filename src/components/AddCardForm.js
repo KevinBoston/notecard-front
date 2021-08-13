@@ -17,7 +17,7 @@ class AddCardForm extends React.Component {
     }
     handleSubmit = e => {
         e.preventDefault()
-
+        this.props.addCard(this.state)
         this.setState({
             front: "",
             back: "",
