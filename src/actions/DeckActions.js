@@ -26,6 +26,8 @@ export const getDecks = () => {
 }
 
 export const addDeck = (newDeck) => {
+    //Make sure that newDeck comes back from back end
+    //with deck_id, and empty card array
     console.log(newDeck);
     return (dispatch) => {
         dispatch({
