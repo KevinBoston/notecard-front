@@ -1,4 +1,4 @@
-function DeckReducer(state = {decks: []}, action) {
+function DeckReducer(state = {decks: [], user: {username: undefined}}, action) {
     console.log(action)
     switch (action.type) {
 
