@@ -20,7 +20,8 @@ class AddCardForm extends React.Component {
 
         this.setState({
             front: "",
-            back: ""
+            back: "",
+            deck_id: undefined
         })
         console.log("Submitted")
     }
