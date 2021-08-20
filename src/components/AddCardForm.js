@@ -1,5 +1,5 @@
 import React from 'react';
-import addCard from '../actions/CardActions'
+import {addCard} from '../actions/CardActions'
 
 
 
