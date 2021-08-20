@@ -9,7 +9,7 @@ class AddCardForm extends React.Component {
     state = {
         front: "",
         back: "",
-        deck_id
+        deck_id: 0
     }
     handleChange = e => {
         this.setState({
