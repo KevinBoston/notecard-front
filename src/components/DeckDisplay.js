@@ -2,11 +2,17 @@ import React from 'react'
 import Card from './Card'
 
 
-const DeckDisplay = (props) => {
+const DeckDisplay = props => {
+    console.log("Displaying Deck:")
     console.log(props)
+    debugger
         const displayFirstCard = () => {
-            if (props.deck.cards) {
-                <Card front={props.deck.cards[0].front} back={props.deck.cards[0].back} />
+            
+            if (!!props.deck.cards) {
+                const firstCard = props.deck.cards[0]
+                return <Card front={firstCard.front} back={firstCard.back} />
+            } else {
+                return <p>No cards yet! Add one!</p>
             }
         }
         return(
