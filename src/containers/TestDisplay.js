@@ -3,12 +3,12 @@ import AddCardForm from '../components/AddCardForm'
 import AddDeckForm from '../components/AddDeckForm'
 
 
-const TestDisplay = () => {
+const TestDisplay = (props) => {
 
     return(
         <div className="TestContainer">
             <h3>Testing:</h3>
-            <AddCardForm />
+            <AddCardForm decks={this.props.decks}/>
             <AddDeckForm />
         </div>
     )
