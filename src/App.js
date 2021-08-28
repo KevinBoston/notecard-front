@@ -42,7 +42,7 @@ class App extends React.Component {
         </header> 
         <p>Welcome to Notecard!</p>
         <>{this.showDecks()}</>
-        <TestDisplay />
+        <TestDisplay decks={this.props.decks}/>
       </div>
     ) 
   };
