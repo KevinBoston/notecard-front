@@ -2,6 +2,7 @@ import React from 'react';
 import {withRouter} from 'react-router-dom'
 import {connect} from 'react-redux'
 import {addCard} from '../actions/CardActions'
+import SelectDeckForCard from './SelectDeckForCard'
 
 
 
@@ -37,6 +38,7 @@ class AddCardForm extends React.Component {
             <div className='AddCardForm'>
                 <form onSubmit={this.handleSubmit}>
                     <h5>Add a Card:</h5>
+                    <SelectDeckForCard decks={this.props.decks} />
                     <label>Front: </label>
                     <input type="text" name="front" onChange={this.handleChange} placeholder="Front of the card" value={this.state.front} /><br />
                     <label>Back: </label>

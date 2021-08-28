@@ -8,7 +8,7 @@ const TestDisplay = (props) => {
     return(
         <div className="TestContainer">
             <h3>Testing:</h3>
-            <AddCardForm decks={this.props.decks}/>
+            <AddCardForm decks={props.decks}/>
             <AddDeckForm />
         </div>
     )
