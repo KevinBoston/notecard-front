@@ -4,11 +4,9 @@ class SelectDeckForCard extends React.Component {
     
 
     generateOptions() {
-        console.log(this.props.decks)
         const decks = this.props.decks
         const names = []
         for (let i = 0; i < decks.length; i ++) {
-            console.log("Adding: " + decks[i].name)
             names.push(decks[i].name)
         }
         return names.join(',')
