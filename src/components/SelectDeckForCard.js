@@ -20,7 +20,7 @@ class SelectDeckForCard extends React.Component {
         return(
             <>
                 Add card to which deck?<br />
-                {this.generateOptions()}
+                {this.generateOptions()} <br />
             </>
         )
     }
