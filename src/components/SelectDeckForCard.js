@@ -21,8 +21,10 @@ class SelectDeckForCard extends React.Component {
         debugger
         return(
             <>
-                Add card to which deck?<br />
-                {this.generateOptions()} <br />
+            <label>
+                    Add card to which deck?<br />
+                    {this.generateOptions()} <br />
+                </label>
             </>
         )
     }
