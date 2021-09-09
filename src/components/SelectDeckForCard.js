@@ -23,7 +23,9 @@ class SelectDeckForCard extends React.Component {
             <>
             <label>
                     Add card to which deck?<br />
-                    {this.generateOptions()} <br />
+                    <select value={this.state.value} onChange={this.handleChange}>
+                        {this.generateOptions()}
+                    </select>
                 </label>
             </>
         )
