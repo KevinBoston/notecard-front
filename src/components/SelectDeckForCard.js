@@ -6,6 +6,9 @@ class SelectDeckForCard extends React.Component {
 
     }
     handleChange = e => {
+        console.log(e.target)
+        console.log(e)
+        debugger
         this.setState({
             [e.target.name]: e.target.value
         })
@@ -14,19 +17,20 @@ class SelectDeckForCard extends React.Component {
     generateOptions() {
         const decks = this.props.decks
         const names = []
-        const tags = []
+        const tags = [<option key={null}>Please select a deck:</option>]
         for (let i = 0; i < decks.length; i ++) {
+            console.log(decks[i].id + " " + decks[i].name)
             names.push(decks[i].name)
-            tags.push(<option value={decks[i].id}>{decks[i].name}</option>)
+            tags.push(<option onChange={this.handleChange} key={decks[i].id}>{decks[i].name}</option>)
         }
         return tags
 
     }
 
     render() {
-        console.log(this.props)
+        //console.log(this.props)
 
-        debugger
+        //debugger
         return(
             <>
             <label>
