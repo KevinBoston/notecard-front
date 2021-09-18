@@ -21,7 +21,7 @@ class SelectDeckForCard extends React.Component {
         for (let i = 0; i < decks.length; i ++) {
             console.log(decks[i].id + " " + decks[i].name)
             names.push(decks[i].name)
-            tags.push(<option onChange={this.handleChange} key={decks[i].id}>{decks[i].name}</option>)
+            tags.push(<option onChange={this.handleChange} value={decks[i].id}>{decks[i].name}</option>)
         }
         return tags
 
