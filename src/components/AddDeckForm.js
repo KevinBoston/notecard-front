@@ -41,7 +41,7 @@ class AddDeckForm extends React.Component {
                     <input type="text" name="description" onChange={this.handleChange} placeholder="Description" value={this.state.description} /><br />
                     <label>Should the deck be public? </label>
                     <input type="radio" name="public" onChange={this.handleChange} value = {true} />True
-                    <input type="radio" name="public" onChange={this.handleChange} value={false} />False
+                    <input type="radio" name="public" onChange={this.handleChange} value={false} />False<br />
                     <input type="submit" disabled={this.determineDisabled}/>
                 </form>
             </div>
