@@ -11,6 +11,7 @@ const TestDisplay = (props) => {
             <h3>Testing:</h3>
             <AddCardForm decks={props.decks}/>
             <AddDeckForm />
+            <DisplayAllCardsInDeck decks={props.decks} />
         </div>
     )
 

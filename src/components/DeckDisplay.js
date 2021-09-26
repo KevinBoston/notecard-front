@@ -5,7 +5,7 @@ import Card from './Card'
 const DeckDisplay = props => {
     console.log("Displaying Deck:")
     console.log(props)
-    debugger
+    //debugger
         const displayFirstCard = () => {
             
             if (!!props.deck.cards) {

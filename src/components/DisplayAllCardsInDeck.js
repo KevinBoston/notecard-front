@@ -4,10 +4,10 @@ class DisplayAllCardsInDeck extends React.Component {
     
 
     render() {
-        console.log(props)
+        console.log(this.props)
         return(
             <>
-
+                All Cards Incoming!
             </>
         )
 
