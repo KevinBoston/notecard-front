@@ -40,7 +40,7 @@ class AddCardForm extends React.Component {
             <div className='AddCardForm'>
                 <form onSubmit={this.handleSubmit}>
                     <h5>Add a Card:</h5>
-                    <SelectDeckForCard decks={this.props.decks} handleChange={this.handleChange} value={this.state.deck_id}/>
+                    <SelectDeckForCard decks={this.props.decks} handleChange={this.handleChange} /*value={this.state.deck_id}*/ />
                     <label>Front: </label>
                     <input type="text" name="front" onChange={this.handleChange} placeholder="Front of the card" value={this.state.front} /><br />
                     <label>Back: </label>
