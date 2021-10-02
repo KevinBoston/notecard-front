@@ -7,7 +7,7 @@ class DisplayAllCardsInDeck extends React.Component {
         console.log("Deck: " + deck.name)
         console.log(deck.cards)
         deck.cards.forEach(card => {
-            <Deck card={card} />
+            <Card front={card.front} back={card.back} />
         })
 
     }
