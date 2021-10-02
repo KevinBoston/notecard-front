@@ -11,7 +11,7 @@ class DisplayAllCardsInDeck extends React.Component {
         console.log(this.props.decks)
         return(
             <>
-                {this.props.deck.forEach(deck => {
+                {this.props.decks.forEach(deck => {
                     this.displayCards(deck)
                 })}
                 All Cards Incoming!
